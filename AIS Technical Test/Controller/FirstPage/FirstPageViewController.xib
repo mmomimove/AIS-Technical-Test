@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FirstPageViewController" customModule="AIS_Technical_Test" customModuleProvider="target">
+            <connections>
+                <outlet property="btnFacebookLogIn" destination="vYo-ZN-Yia" id="JPV-l2-Th2"/>
+                <outlet property="imgViewAppleLogIn" destination="WxA-vS-0kv" id="yCf-J9-F4M"/>
+                <outlet property="imgViewFacebookLogIn" destination="6rl-JI-oEe" id="Ldn-IK-0ra"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="viewAppleLogIn" destination="pFW-nP-Mnw" id="XWr-Ux-L9P"/>
+                <outlet property="viewFacebookLogIn" destination="7ii-8L-n56" id="mnK-PI-Imj"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mobile Developer" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6ww-sU-MUc">
+                    <rect key="frame" x="70" y="209" width="253" height="36"/>
+                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="30"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7ii-8L-n56">
+                    <rect key="frame" x="50" y="345" width="293" height="50"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sign in with FaceBook" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6wH-AP-0RA">
+                            <rect key="frame" x="69.999999999999986" y="14.666666666666686" width="173.66666666666663" height="21"/>
+                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="iconFacebook" translatesAutoresizingMaskIntoConstraints="NO" id="6rl-JI-oEe">
+                            <rect key="frame" x="20" y="10" width="30" height="30"/>
+                            <color key="tintColor" systemColor="tintColor"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="6rl-JI-oEe" secondAttribute="height" multiplier="1:1" id="IYV-TW-sDM"/>
+                            </constraints>
+                        </imageView>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vYo-ZN-Yia">
+                            <rect key="frame" x="0.0" y="0.0" width="293" height="50"/>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                            <connections>
+                                <action selector="onTapFacebookLogin:" destination="-1" eventType="touchUpInside" id="ihc-go-Hcm"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBlueColor"/>
+                    <constraints>
+                        <constraint firstItem="vYo-ZN-Yia" firstAttribute="top" secondItem="7ii-8L-n56" secondAttribute="top" id="0Zq-Bi-E2C"/>
+                        <constraint firstAttribute="bottom" secondItem="vYo-ZN-Yia" secondAttribute="bottom" id="Lke-H4-PXK"/>
+                        <constraint firstItem="6rl-JI-oEe" firstAttribute="centerY" secondItem="7ii-8L-n56" secondAttribute="centerY" id="NFt-FO-FCK"/>
+                        <constraint firstAttribute="trailing" secondItem="vYo-ZN-Yia" secondAttribute="trailing" id="S1a-p2-Uug"/>
+                        <constraint firstItem="vYo-ZN-Yia" firstAttribute="leading" secondItem="7ii-8L-n56" secondAttribute="leading" id="fT5-28-OuR"/>
+                        <constraint firstItem="6rl-JI-oEe" firstAttribute="top" secondItem="7ii-8L-n56" secondAttribute="top" constant="10" id="gxH-pF-qih"/>
+                        <constraint firstItem="6wH-AP-0RA" firstAttribute="centerY" secondItem="7ii-8L-n56" secondAttribute="centerY" id="hmw-fU-bFp"/>
+                        <constraint firstItem="6wH-AP-0RA" firstAttribute="leading" secondItem="6rl-JI-oEe" secondAttribute="trailing" constant="20" id="mQg-eh-zt6"/>
+                        <constraint firstItem="6rl-JI-oEe" firstAttribute="leading" secondItem="7ii-8L-n56" secondAttribute="leading" constant="20" id="qX8-3F-fuF"/>
+                        <constraint firstAttribute="height" constant="50" id="qxH-yc-32r"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pFW-nP-Mnw">
+                    <rect key="frame" x="50" y="415" width="293" height="50"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sign in with Apple" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zT5-FP-mkd">
+                            <rect key="frame" x="70.000000000000014" y="14.666666666666686" width="142.33333333333337" height="21"/>
+                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="iconApple" translatesAutoresizingMaskIntoConstraints="NO" id="WxA-vS-0kv">
+                            <rect key="frame" x="20" y="10" width="30" height="30"/>
+                            <color key="tintColor" systemColor="tintColor"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="WxA-vS-0kv" secondAttribute="height" multiplier="1:1" id="X9v-Um-Nmi"/>
+                            </constraints>
+                        </imageView>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HRz-RK-tc9">
+                            <rect key="frame" x="0.0" y="0.0" width="293" height="50"/>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                            <connections>
+                                <action selector="onTapAppleLogIn:" destination="-1" eventType="touchUpInside" id="RjZ-eJ-9Sh"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="HRz-RK-tc9" secondAttribute="trailing" id="0MP-yK-Glt"/>
+                        <constraint firstItem="HRz-RK-tc9" firstAttribute="top" secondItem="pFW-nP-Mnw" secondAttribute="top" id="8LT-sW-8LK"/>
+                        <constraint firstItem="WxA-vS-0kv" firstAttribute="top" secondItem="pFW-nP-Mnw" secondAttribute="top" constant="10" id="AqA-0Q-GRb"/>
+                        <constraint firstItem="HRz-RK-tc9" firstAttribute="leading" secondItem="pFW-nP-Mnw" secondAttribute="leading" id="CUJ-0C-vR3"/>
+                        <constraint firstItem="WxA-vS-0kv" firstAttribute="leading" secondItem="pFW-nP-Mnw" secondAttribute="leading" constant="20" id="DLI-qZ-El4"/>
+                        <constraint firstAttribute="bottom" secondItem="HRz-RK-tc9" secondAttribute="bottom" id="H2D-1T-Oq4"/>
+                        <constraint firstItem="zT5-FP-mkd" firstAttribute="centerY" secondItem="pFW-nP-Mnw" secondAttribute="centerY" id="OUa-XN-rT5"/>
+                        <constraint firstItem="WxA-vS-0kv" firstAttribute="centerY" secondItem="pFW-nP-Mnw" secondAttribute="centerY" id="PAb-hg-HAA"/>
+                        <constraint firstAttribute="height" constant="50" id="nxc-qb-6Xg"/>
+                        <constraint firstItem="zT5-FP-mkd" firstAttribute="leading" secondItem="WxA-vS-0kv" secondAttribute="trailing" constant="20" id="yw3-HA-p8n"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" name="AISbaseColor"/>
+            <constraints>
+                <constraint firstItem="pFW-nP-Mnw" firstAttribute="top" secondItem="7ii-8L-n56" secondAttribute="bottom" constant="20" id="3rY-vK-HdL"/>
+                <constraint firstItem="7ii-8L-n56" firstAttribute="centerX" secondItem="6ww-sU-MUc" secondAttribute="centerX" id="KTK-3F-CrO"/>
+                <constraint firstItem="7ii-8L-n56" firstAttribute="top" secondItem="6ww-sU-MUc" secondAttribute="bottom" constant="100" id="Kst-jJ-2TG"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="7ii-8L-n56" secondAttribute="trailing" constant="50" id="LoQ-B9-GfK"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="6ww-sU-MUc" secondAttribute="trailing" constant="70" id="U9q-Ew-Vdp"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="pFW-nP-Mnw" secondAttribute="trailing" constant="50" id="dyo-If-SAm"/>
+                <constraint firstItem="6ww-sU-MUc" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="hLF-u5-W27"/>
+                <constraint firstItem="pFW-nP-Mnw" firstAttribute="centerX" secondItem="7ii-8L-n56" secondAttribute="centerX" id="oBu-Om-V5A"/>
+                <constraint firstItem="6ww-sU-MUc" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="150" id="pEI-S8-nXD"/>
+            </constraints>
+            <point key="canvasLocation" x="119.84732824427481" y="19.718309859154932"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="iconApple" width="128" height="128"/>
+        <image name="iconFacebook" width="128" height="128"/>
+        <namedColor name="AISbaseColor">
+            <color red="0.55299997329711914" green="0.77600002288818359" blue="0.25099998712539673" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBlueColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="tintColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
