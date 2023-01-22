@@ -8,5 +8,7 @@ pod 'AlamofireImage'
 pod 'SwiftyJSON'
 pod 'FBSDKCoreKit'
 pod 'FBSDKLoginKit'
+pod 'Firebase/Core’
+pod ‘Firebase/Messaging’
 
 end
